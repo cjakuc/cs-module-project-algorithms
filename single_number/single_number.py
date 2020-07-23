@@ -9,6 +9,17 @@ def single_number(arr):
         if temp == 1:
             return x
 
+def single_numner(arr):
+    counts = {}
+    for x in arr:
+        if x not in counts:
+            counts[x] = 1
+        else:
+            counts[x] += 1
+    for k, v in counts.items():
+        if v == 1:
+            return k
+
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
